@@ -7,11 +7,11 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import CountVectorizer
 
 # Load the pre-trained model
-model = pickle.load(open(r"C:\Users\padru\nb.pkl",'rb'))
+model = pickle.load(open(r"nb.pkl",'rb'))
 
 # Load the CountVectorizer used for training
 ##with  as f:
-bow = pickle.load(open(r"C:\Users\padru\bow.pkl",'rb'))
+bow = pickle.load(open(r"bow.pkl",'rb'))
 
 st.title("Email Spam/Ham Classifier")
 
